@@ -8,7 +8,13 @@
 import UIKit
 import SnapKit
 
+protocol HomeViewControllerDelegate: AnyObject{
+    func didTapButtonMenu()
+}
+
 class ViewController: UIViewController {
+    
+    weak var delegate: HomeViewControllerDelegate?
     
     private var timeLabel: UILabel = {
         let view = UILabel()
@@ -89,6 +95,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image:UIImage(systemName:"list.bullet"),
+                                                           style: .done,
+                                                           target: self,
+                                                           action: #selector(barButtonTaped))
+        view.backgroundColor = .systemGray6
+      
+        
         SetupUI()
         
     }
@@ -104,7 +117,9 @@ class ViewController: UIViewController {
         pauseButton.isEnabled = false
         playButton.isEnabled = true
         
-        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.isHidden = false
         
         view.addSubview(timerPick)
         timerPick.snp.makeConstraints{ (make) in
@@ -359,6 +374,11 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
-
+extension ViewController{
+    
+    @objc func barButtonTaped(){
+        delegate?.didTapButtonMenu()
+    }
+}
 
 

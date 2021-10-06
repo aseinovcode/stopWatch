@@ -70,6 +70,11 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        navigationController?.navigationBar.isHidden = false
+        
         timerPick.delegate = self
         timerPick.dataSource = self
         
@@ -79,13 +84,13 @@ class ViewController2: UIViewController {
     
     func SetupUI(){
         
-        view.backgroundColor = .systemYellow
+        view.backgroundColor = .red
         
         stopButton.isEnabled = false
         pauseButton.isEnabled = false
         playButton.isEnabled = true
         
-        navigationController?.navigationBar.isHidden = true
+        
         view.addSubview(timerPick)
         timerPick.snp.makeConstraints{ (make) in
             make.centerX.centerY.equalTo(view)

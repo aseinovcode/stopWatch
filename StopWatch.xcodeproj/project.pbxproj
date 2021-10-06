@@ -13,11 +13,12 @@
 		CE32338026E76FD5000B9537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32337F26E76FD5000B9537 /* AppDelegate.swift */; };
 		CE32338226E76FD5000B9537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32338126E76FD5000B9537 /* SceneDelegate.swift */; };
 		CE32338426E76FD5000B9537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32338326E76FD5000B9537 /* ViewController.swift */; };
-		CE32338726E76FD5000B9537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE32338526E76FD5000B9537 /* Main.storyboard */; };
 		CE32338926E76FD9000B9537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE32338826E76FD9000B9537 /* Assets.xcassets */; };
 		CE32338C26E76FD9000B9537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE32338A26E76FD9000B9537 /* LaunchScreen.storyboard */; };
 		CE32339726E76FDA000B9537 /* StopWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32339626E76FDA000B9537 /* StopWatchTests.swift */; };
 		CE3233A226E76FDA000B9537 /* StopWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3233A126E76FDA000B9537 /* StopWatchUITests.swift */; };
+		CE689A01270C9C4E00D5C24B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE689A00270C9C4E00D5C24B /* MenuViewController.swift */; };
+		CE689A03270C9C5C00D5C24B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE689A02270C9C5C00D5C24B /* ContainerViewController.swift */; };
 		CEAAE02126EA6C360036F1D0 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAAE02026EA6C360036F1D0 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +50,6 @@
 		CE32337F26E76FD5000B9537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE32338126E76FD5000B9537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE32338326E76FD5000B9537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE32338626E76FD5000B9537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE32338826E76FD9000B9537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE32338B26E76FD9000B9537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE32338D26E76FD9000B9537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +59,8 @@
 		CE32339D26E76FDA000B9537 /* StopWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3233A126E76FDA000B9537 /* StopWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchUITests.swift; sourceTree = "<group>"; };
 		CE3233A326E76FDA000B9537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE689A00270C9C4E00D5C24B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CE689A02270C9C5C00D5C24B /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		CEAAE02026EA6C360036F1D0 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		E1E202EC76BDDA92527223B5 /* Pods-StopWatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopWatchTests.debug.xcconfig"; path = "Target Support Files/Pods-StopWatchTests/Pods-StopWatchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F11B86C3BDF7B4FD95BA7068 /* Pods_StopWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,11 +130,9 @@
 		CE32337E26E76FD5000B9537 /* StopWatch */ = {
 			isa = PBXGroup;
 			children = (
+				CE689A04270C9C8A00D5C24B /* main */,
 				CE32337F26E76FD5000B9537 /* AppDelegate.swift */,
 				CE32338126E76FD5000B9537 /* SceneDelegate.swift */,
-				CE32338326E76FD5000B9537 /* ViewController.swift */,
-				CEAAE02026EA6C360036F1D0 /* ViewController2.swift */,
-				CE32338526E76FD5000B9537 /* Main.storyboard */,
 				CE32338826E76FD9000B9537 /* Assets.xcassets */,
 				CE32338A26E76FD9000B9537 /* LaunchScreen.storyboard */,
 				CE32338D26E76FD9000B9537 /* Info.plist */,
@@ -156,6 +156,17 @@
 				CE3233A326E76FDA000B9537 /* Info.plist */,
 			);
 			path = StopWatchUITests;
+			sourceTree = "<group>";
+		};
+		CE689A04270C9C8A00D5C24B /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CE689A02270C9C5C00D5C24B /* ContainerViewController.swift */,
+				CE689A00270C9C4E00D5C24B /* MenuViewController.swift */,
+				CE32338326E76FD5000B9537 /* ViewController.swift */,
+				CEAAE02026EA6C360036F1D0 /* ViewController2.swift */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 		FDBAB198F4F4EACFB6CA19EF /* Pods */ = {
@@ -281,7 +292,6 @@
 			files = (
 				CE32338C26E76FD9000B9537 /* LaunchScreen.storyboard in Resources */,
 				CE32338926E76FD9000B9537 /* Assets.xcassets in Resources */,
-				CE32338726E76FD5000B9537 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +420,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE32338426E76FD5000B9537 /* ViewController.swift in Sources */,
+				CE689A01270C9C4E00D5C24B /* MenuViewController.swift in Sources */,
 				CEAAE02126EA6C360036F1D0 /* ViewController2.swift in Sources */,
 				CE32338026E76FD5000B9537 /* AppDelegate.swift in Sources */,
+				CE689A03270C9C5C00D5C24B /* ContainerViewController.swift in Sources */,
 				CE32338226E76FD5000B9537 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,14 +460,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE32338526E76FD5000B9537 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE32338626E76FD5000B9537 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE32338A26E76FD9000B9537 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
